@@ -1,80 +1,170 @@
-# Valorant Journal
+# Third Space
 
-Welcome to the **Valorant Journal**! This application allows players to track their gameplay statistics, reflect on their performance, and manage tips for improvement in Valorant.
+**Third Space** is a Svelte-based application designed to help users find, join, and create social spaces and events. This app makes connecting with others easier by providing tools to explore new spaces, join community events, and foster connections in your city.
+
+---
 
 ## Features
 
-- **User-Friendly Interface**: Easy-to-navigate layout to record and view game stats.
-- **Game Stats Recording**: Input your kills, deaths, assists, tilt level, maps played, agents used, and more.
-- **Journal Entries**: Save and view entries for each game, including links to your best games and detailed notes.
-- **Goal Tracking**: Set and track your KDA (Kill/Death/Assist) and tilt level goals.
-- **Tips and Advice**: Access a list of gameplay tips to improve your skills.
-- **Media Uploads**: Upload images or videos related to your gameplay.
-- **Calendar Integration**: Select a date to review previous entries.
+### 🌌 **Landing Page**  
+- **Hero Section:**
+  - Inspires users to join and connect with others.
+  - Highlights the app's core purpose: finding friends, attending events, dinners, or adventures.
+  - Call-to-action buttons for surprise bookings or joining a space.
+  
+- **Dynamic Starfield Background:**
+  - Immersive aesthetic that enhances the user experience.
 
-## Getting Started
+- **Upcoming Events:**
+  - Carousel display of upcoming events filtered by the selected city.
+  - Cards with event details, including:
+    - **Event Picture**
+    - **Event Name**
+    - **Date and Time**
+    - **Location**
+    - **Description**
 
-To get started with the Valorant Journal, follow these steps:
+---
 
-### Prerequisites
+### 🌍 **City Selection**
+- Dropdown menu in the navigation bar to select a city.
+- Updates the events displayed dynamically based on the current selection.
 
-Ensure you have the following installed:
+---
 
-- Node.js (version 14 or later)
-- npm (Node Package Manager)
+### 🚀 **Navigation**
+- Seamlessly switch between:
+  - **Main Page**: View events and app highlights.
+  - **Other Spaces Page**: Explore more options and spaces (other spaces functionality).
 
-### Installation
+---
 
-1. Clone the repository:
+### 📅 **Event Management**
+- Upcoming events are displayed dynamically in a carousel.
+- Each event includes rich media and a compact description for easy browsing.
+
+---
+
+### 🎨 **Responsive Design**
+- Built using **ShadCN-Svelte** and **TailwindCSS** for modern and scalable UI.
+- Fully responsive layout optimized for all device sizes.
+
+---
+
+### 🔄 **Dynamic Updates**
+- State management using Svelte stores:
+  - **Current City:** Controls the city context for displayed events.
+  - **Events For Current City:** Dynamically filters events based on the city selected.
+
+---
+
+## Technologies Used
+
+- **Svelte**: Frontend framework for building reactive and dynamic web applications.
+- **ShadCN-Svelte**: Modular design system for consistent styling.
+- **TailwindCSS**: Utility-first CSS framework for custom designs.
+- **Embla Carousel**: Carousel library for event displays.
+- **Lucide Icons**: Lightweight and modern icon library.
+
+---
+
+## How to Use
+
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/valorant-journal.git
-   cd valorant-journal
+   git clone https://github.com/your-username/third-space.git
+   cd third-space
    ```
 
-2. Install the necessary dependencies:
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. **Start the Development Server:**
    ```bash
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5000` to view the application.
+4. **Open in Browser:**
+   ```plaintext
+   http://localhost:5173
+   ```
 
-## Usage
+---
 
-1. **Record Your Stats**: Input your game stats after each match, including kills, deaths, assists, and tilt level.
-2. **Save Entries**: Click the "Save" button to store your journal entry.
-3. **View Tips**: Click the "Show All Tips" button to review gameplay tips.
-4. **Access Journal Entries**: Click the "Show All Journal Entries" button to review your saved entries.
-5. **Upload Media**: Choose files to upload related to your gameplay.
+## Folder Structure
+
+```plaintext
+src/
+├── assets/
+│   └── logo.png
+├── components/
+│   ├── ui/
+│   │   ├── button/
+│   │   ├── card/
+│   │   ├── carousel/
+│   │   ├── dialog/
+│   │   ├── input/
+│   │   └── label/
+│   └── pages/
+│       ├── suprise-book.svelte
+│       └── OtherSpaces.svelte
+├── stores.js
+├── App.svelte
+└── main.js
+```
+
+---
+
+## Key Components
+
+- **Navigation Bar:**
+  - Logo and links for switching between pages.
+  - City selection dropdown.
+  - Sign-up and login buttons.
+
+- **Hero Section:**
+  - Center-aligned promotional text.
+  - Buttons for interacting with app features.
+
+- **Event Carousel:**
+  - Dynamic and reusable component for displaying upcoming events.
+
+- **Other Spaces Page:**
+  - Extensible section for exploring additional community spaces.
+
+---
+
+## Future Enhancements
+
+1. **Integration with Maps API** for event location visualization.
+2. **User Authentication** for personalizing experiences.
+3. **Event Creation Page** for allowing users to host their events.
+4. **Mobile App Integration** for a seamless cross-platform experience.
+5. **AI-Powered Recommendations** for personalized event suggestions.
+
+---
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to create an issue or submit a pull request.
-
-1. Fork the repository.
-2. Create a new branch:
+1. Fork the repository and clone it locally.
+2. Create a new branch for your feature or fix:
    ```bash
-   git checkout -b feature/new-feature
+   git checkout -b feature-name
    ```
 3. Commit your changes:
    ```bash
-   git commit -m "Add new feature"
+   git commit -m "Description of changes"
    ```
-4. Push to the branch:
+4. Push to your branch:
    ```bash
-   git push origin feature/new-feature
+   git push origin feature-name
    ```
-5. Open a pull request.
+5. Open a pull request for review.
+
+---
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to the Svelte community for their incredible resources and support.
-- Special thanks to the Valorant community for their continuous inspiration and motivation.
