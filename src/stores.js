@@ -7,7 +7,7 @@ export const currentCity = writable('New York'); // Default city
 export const cityEvents = writable({
   "New York": [
     {
-      picture: "/src/assets/ww_walk.jpg",
+      picture: "/ww_walk.jpg",
       event_name: "Winter Wonderland Walk",
       time: "6:00 PM",
       date: "2024-12-05",
@@ -15,7 +15,7 @@ export const cityEvents = writable({
       description: "Join us for a winter wonderland walk in Central Park!"
     },
     {
-      picture: "/src/assets/boradway.jpg",
+      picture: "/boradway.jpg",
       event_name: "Broadway Backstage",
       time: "7:00 PM",
       date: "2024-12-06",
@@ -23,7 +23,7 @@ export const cityEvents = writable({
       description: "An exclusive backstage tour of Broadway's latest hit."
     },
     {
-      picture: "/src/assets/ice_skate.jpg",
+      picture: "/ice_skate.jpg",
       event_name: "Holiday Ice Skating",
       time: "5:30 PM",
       date: "2024-12-07",
@@ -31,7 +31,7 @@ export const cityEvents = writable({
       description: "Enjoy a magical evening ice skating at the iconic Rockefeller Center rink!"
     },
     {
-      picture: "/src/assets/market.jpeg",
+      picture: "/market.jpeg",
       event_name: "Christmas Market Extravaganza",
       time: "10:00 AM",
       date: "2024-12-08",
@@ -39,7 +39,7 @@ export const cityEvents = writable({
       description: "Explore festive holiday booths, crafts, and treats at the Christmas Market."
     },
     {
-      picture: "/src/assets/hlt_hero.jpg",
+      picture: "/hlt_hero.jpg",
       event_name: "Holiday Lights Tour",
       time: "7:30 PM",
       date: "2024-12-09",
@@ -47,7 +47,7 @@ export const cityEvents = writable({
       description: "Take a tour of the extravagant holiday lights displays in Dyker Heights!"
     },
     {
-      picture: "/src/assets/gingerbread.jpg",
+      picture: "/gingerbread.jpg",
       event_name: "Gingerbread House Decorating",
       time: "2:00 PM",
       date: "2024-12-10",
@@ -55,7 +55,7 @@ export const cityEvents = writable({
       description: "Get creative with family and friends by decorating your own gingerbread house."
     },
     {
-      picture: "/src/assets/New_years.jpg",
+      picture: "/New_years.jpg",
       event_name: "New Year's Eve Fireworks Show",
       time: "11:00 PM",
       date: "2024-12-31",
