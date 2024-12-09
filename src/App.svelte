@@ -35,7 +35,7 @@
   <nav class="flex justify-between items-center py-4 px-6 border-b border-gray-700">
     <button on:click={() => navigateTo('main')}>
     <img
-    src="/assets/logo.png"
+    src="./assets/logo.png"
     alt="3rd Space Logo"
     class="h-8 w-512"
   />
